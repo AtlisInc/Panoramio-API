@@ -12,7 +12,7 @@ import com.atlis.location.panoramio.model.PanoramioAbs;
  * @author nf
  */
 public class Address extends PanoramioAbs{
-
+ 
     private int precision;
     private String county;
     private String suburb;
