@@ -37,8 +37,8 @@ public class PanoramioAPI {
     public static PanoramioAPI with() {
         return new PanoramioAPI();
     }
-
-    public PanoramioImages getImagesForLocation(List<MapRegion> methodParameter, Address address) {
+    
+    public PanoramioImages getImagesForLocation(List<MapRegion> methodParameter) {
         try {
             return getPanoramioResponse(methodParameter);
         } catch (Throwable th) {
