@@ -29,7 +29,7 @@ PanoramioAPI is thread safe singleton.
 
 * [Google GSON](https://github.com/google/gson)
 * [Apache Commons Lang](http://commons.apache.org/proper/commons-lang/)
-* [Apache Log4J](http://logging.apache.org/log4j/2.x/
+* [Apache Log4J](http://logging.apache.org/log4j/2.x/)
 
 ## License
 
