@@ -12,30 +12,24 @@ Java library for interaction with Panoramio API [panoramio.com](http://www.panor
 
 ## Usage
 
-Simply use DIUASparser or any of its subclasses like so:
+Very simple.
 
 ```
-UASparser parser = new UASparser();
-String key = ""; // udger license key
-OnlineUpdater updater = new OnlineUpdater(parser, key);
-UserAgentInfo info = parser.parse("Mozilla/4.0 (compatible; MSIE 7.0;Windows NT 5.1; )");
+Double latitude = 40.7470;
+Double longitude = -73.9860;
+Double radius = 5.0;
+MapRegion mapRegion = new MapRegion().buildMapRegion(latitude, longitude, radius);
+PanoramioImages panoramioImages = PanoramioAPI.with().getImagesForLocation(Arrays.asList(mapRegion));
+List<PanoramioImage> images = panoramioImages.getPhotos();
 ```
 
-This will create a new parser and initialize it with a bundled copy of the database. The
-``OnlineUpdater`` will then asynchronously fetch the latest database in the
-background, making it available after a few seconds and caching it locally as well. See
-it's source for more on how it works.
-
-In addition, there are a few different parser classes available:
-
-* ``UASparser`` - Default parser, thread-safe
-* ``MultithreadedUASparser`` - A faster variant of UASparser, uses a bit more memory
-* ``SingleThreadedUASparser`` - Non-threadsafe variant, ideal for Hadoop and similar use cases
-* ``BrowserFamilyParser`` - UASparser subclass which _only_ returns the browser family string
+PanoramioAPI is thread safe singleton.
 
 ## Dependencies
 
-* [JRegex](http://jregex.sourceforge.net/)
+* [Google GSON](https://github.com/google/gson)
+* [Apache Commons Lang](http://commons.apache.org/proper/commons-lang/)
+* [Apache Log4J](http://logging.apache.org/log4j/2.x/
 
 ## License
 
