@@ -5,7 +5,7 @@ package com.atlis.panoramio.test;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import com.atlis.location.model.MapRegion;
+import com.atlis.location.model.impl.MapRegion;
 import com.atlis.location.panoramio.PanoramioAPI;
 import com.atlis.location.panoramio.model.impl.PanoramioImage;
 import com.atlis.location.panoramio.model.impl.PanoramioImages;

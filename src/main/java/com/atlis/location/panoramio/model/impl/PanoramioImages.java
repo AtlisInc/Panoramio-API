@@ -5,14 +5,14 @@
  */
 package com.atlis.location.panoramio.model.impl;
 
-import com.atlis.location.panoramio.model.PanoramioAbs;
+import com.atlis.location.model.LocationModelAbs;
 import java.util.List;
 
 /**
  *
  * @author nf
  */
-public class PanoramioImages extends PanoramioAbs {
+public class PanoramioImages extends LocationModelAbs {
 
     String count;
     String has_more;

@@ -5,12 +5,11 @@
  */
 package com.atlis.location.panoramio;
 
-import com.atlis.location.model.Address;
+import com.atlis.location.model.impl.Address;
 import com.atlis.location.utils.LocationUtils;
-import com.atlis.location.model.BoundingBox;
-import com.atlis.location.model.MapRegion;
+import com.atlis.location.model.impl.BoundingBox;
+import com.atlis.location.model.impl.MapRegion;
 import com.atlis.location.panoramio.model.impl.PanoramioImages;
-import com.atlis.location.utils.PanoramioUrlBuilder;
 import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -5,13 +5,13 @@
  */
 package com.atlis.location.panoramio.model.impl;
 
-import com.atlis.location.panoramio.model.PanoramioAbs;
+import com.atlis.location.model.LocationModelAbs;
 
 /**
  *
  * @author nf
  */
-public class PanoramioImage extends PanoramioAbs{
+public class PanoramioImage extends LocationModelAbs{
 
     private String photo_id;
     private String photo_title;
